@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de DATOS</title>
+</head>
+<body>
+    <!--
+                    ========================
+                    TIPADO DE LAS VARIABLES
+                    ========================
+        
+        1. string -> Cadenas de Texto (caracteres)
+            a.Sintaxis: iran siempre definido entre comillas ('') y ("")
+            b. Dentro de comillas simple, podras usar comillas dobles y viceversa
+        2. number -> Valores numericos
+            a.Guarada indistintamente en una variable, cualquier cualidad de los
+            numeros reales
+            b. Soporta 3 bases numéricas. Por defecto simpre en base(10), las otras
+            dos bases serán Octales(8) y Hexadecimales(16)
+                **¿Cómo identificamos estas bases?
+                    las hexadecimales precedidas por un -0x- ejemplo: 0x123 valor hexadecimal del º 123
+                    las octales precedidas de un -0-  ejemplo: 0122 valor octal del nº 122 
+         3.boolean -> variables logicas
+            a. dos valores: true/false
+            b. minusculas valor
+            c.Necesidad de generar comparaciones
+            d. la equivalencia a number; true=1, false=0 o distinto de 1
+        4.object -> Objetos
+            a.Sintaxis:
+                var nombreVariable = new MayusculaValordelObjeto()
+
+        5.null-> la variable existe, pero no su valor. No accede, no encuentra, no define valor
+        6.undefined-> dispersion de la variable, fuera rango o de ambito. sin valor       
+
+    En todo caso, tendremos un método para poder identificar y medir el tipo de variable
+    typeof(), identifica pero no evalua
+    -->
+    <script>
+        var texto='Javascript nivel incial';
+        var numero = 7.8;
+        var buleana=false;
+        var fecha = new Date();
+        var nula=null;
+        var variable;
+        
+        document.write('texto: ' + texto + ' de tipo: ' + typeof(texto)+'<br>');
+        document.write('numero: ' + numero + ' de tipo: ' + typeof(numero)+'<br>');
+        document.write('buleana: ' + buleana + ' de tipo: ' + typeof(buleana)+'<br>');
+        document.write('fecha: ' + fecha + ' de tipo: ' + typeof(fecha)+'<br>');
+        document.write('nula: ' + nula + ' de tipo: ' + typeof(nula)+'<br>');
+        document.write('variable ' + variable + ' de tipo: ' + typeof(variable));
+    </script>
+</body>
+</html>
