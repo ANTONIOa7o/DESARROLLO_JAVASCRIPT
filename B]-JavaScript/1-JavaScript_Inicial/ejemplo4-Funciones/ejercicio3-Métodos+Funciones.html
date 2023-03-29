@@ -17,8 +17,8 @@
 </head>
 
 <body>
-    <div class="container" align=middle >
-        <div class="card border-dark mb-3" style="max-width: 32rem;" >
+    <div class="container" align=middle>
+        <div class="card border-dark mb-3" style="max-width: 32rem;">
             <div class="card-header">FUNCIONES</div>
             <div class="card-body">
                 <h5 class="card-title">Presiona los botones para visualizar resultado de funciones</h5>
@@ -26,14 +26,14 @@
                     Hayaras las diversas funciones con sus metodos asociados, de áreas como MATEMATICAS(Math),
                     CADENAS DE TEXTO(String), FUNCIONES HORARIAS(Date)
                 </p>
-                <div id="resultado" class="estetica">
-
+                <div class="estetica" id="resultado">
+                    <!--Aqui apuntamos al lugar (con el Id) donde se mostrará el getElmenteById.-->
                 </div>
             </div>
         </div>
         <button type="button" class="btn btn-outline-primary" onclick="funcionesMath()">∱(Matematicas)</button>
-        <button type="button" class="btn btn-outline-primary">∱(Texto)</button>
-        <button type="button" class="btn btn-outline-primary">∱(Fechas)</button>
+        <button type="button" class="btn btn-outline-primary" onclick="funcionesString()">∱(Texto)</button>
+        <button type="button" class="btn btn-outline-primary" onclick="funcionesDate()">∱(Fechas)</button>
     </div>
 </body>
 
