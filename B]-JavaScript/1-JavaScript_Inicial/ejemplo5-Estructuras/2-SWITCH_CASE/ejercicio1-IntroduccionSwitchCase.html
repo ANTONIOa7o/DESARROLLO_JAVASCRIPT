@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a Switch Case</title>
+    <!--Inyectaremos las librerias de referencia de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!--Inyecto la libreria de sweetAlert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <!--
+            ===============
+            2. switch case
+            ===============
+    
+        Otra estructura más que nos ayuda a ejecutar diversas acciones dependiendo
+        de determinadas configuracion o condiciones. Parte desde un planteamiento en el
+        cual pueda darse el caso o la necesidad de tomar una decisión a partir de multiples
+        opciones o posibilidades(configuraciones o condiciones). Clara imposicion, en la
+        cual solamente puede ser posible una de ellas. Solo hay una solucion.
+        Sintaxis:
+         switch (evaluacion de la estructura) {
+            case ('string', number, false...):
+                sentencia a ejecutar cuando dicho case sea true;
+
+                break;
+            .
+            .case...
+            .
+            .
+            .case...
+            .
+            .
+            default:(else)
+                sentencia a ejecutar cuando las condiciones o posibilidades no se cumple ninguna
+                break;
+        }
+
+    -->
+    <div class="container" style="text-align: center; margin-top: 32px;">
+        <h2> <u> Ejemplo</u> <code>Switch Case:</code> Identificaciones de Género</h2>
+        <button class="btn btn-warning" onclick="identificacion()">Identificacion de Género</button>
+    </div>
+    <script>
+
+        function identificacion() {
+            var sexo = prompt('define tu genero: Hombre,mujer, Trangenero, Fluido, Pansexual, Binario, No Binario,Afilico, Piramidal..')
+
+            switch (sexo.toLocaleLowerCase()) {
+                case 'hombre':
+                    swal('Regido por el colectivo heterosexual y atribuciones sociales subvenciondas nivel I')
+                    break;
+
+                case 'mujer':
+                    swal('Regido por el colectivo heterosexual y atribuciones sociales subvenciondas nivel I')
+                    break;
+                case 'transgenero':
+                    swal('Regido por el colectivo homosexual y atribuciones sociales subvenciondas nivel II')
+                    break;
+                case 'fluido':
+                    swal('Regido por el colectivo homosexual y atribuciones sociales subvenciondas nivel II')
+                    break;
+                default:
+                    swal('No ha introducido ninguna identificacion o Perteneces a un colectivo aun por definir')
+                    break;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
