@@ -6,7 +6,7 @@ var arrayImagenes =new Array(
     "https://picsum.photos/id/81/300/300.jpg" ,//4
     "https://picsum.photos/id/136/300/300.jpg" //5
 
-)
+);
 let i = 1
 function carrusel(){
     document.getElementById('fotos').src = arrayImagenes[i];
