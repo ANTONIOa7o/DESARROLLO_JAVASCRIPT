@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos, Relacionales, aritmeticos</title>
+</head>
+<body>
+    <!--
+                =====================
+                A] OPERADORES LOGICOS
+                =====================
+
+        Operacion                      Simbolo                  Descripcion
+
+        Y(Copulativas)                  &&                  Considerará cuando ambas sentencias sean verdaderas, la estructura será true
+                                                            si alguna de las sentencias no son true, falseará toda la estructura
+
+        Ó                               ||                  Considera true, en el instante que cualquiera de las sentencias sea true
+
+        No(Negacion)                    !                   Valor contrario
+
+                ==========================
+                B] OPERADORES RELACIONALES
+                ==========================
+    
+    
+        Operacion                       Simbolo                 Descripcion
+        
+        igual a                            ==                   Igualdad entre elementos comparados
+
+        distinto                           !=                    Contrario al elemento comparado
+
+        Mayor,                              >
+        mayor e igual                       >=                   Comparacion de cantidad
+        Menor,                              <                    Comparacion de cantidad  
+        menor e igual                       <= 
+
+        igualdad estricta                   ===                   Igualdad en toda la naturaleza de la variable
+                                                                    var n1 = 0
+                                                                    var n2 ='0'
+
+        Distinto a igualdad estricta        !==                  Contrario al elmento comporado en igualdad estricta
+
+            ==========================
+            C] OPERADORES ARITMETICOS
+            ==========================
+    
+    Operadores                              Simbolos                Descripcion
+
+    suma, resta,                            +,-,/,*
+    division entera y multiplicacion
+
+    Cambio de signo                           -()                   
+
+    Incremento                                  ++                  incremento unitario
+
+    Decremento                                  --                  decremento unitario
+
+    resto de la division                        %                   resto de la división
+    -->
+
+    <script>
+        var numero = 7;
+
+        console.log('Igualdad: ' + (numero==7));
+        console.log('Desigualdad: ' + (numero!=7));
+        console.log('Mayor: ' + (numero > 6));
+        console.log('Mayor e igual: ' + (numero>=10));
+        console.log('Menor e igual: ' + (numero<=7));
+        
+    //Igualdades estrictas
+    console.log('Igualdad: ' + (numero =='7'));
+    console.log('Igualdad estricta: ' + (numero==='7'));
+    //Desigualdad
+    console.log('Desigual: ' + (numero !='7'));
+    console.log('Desigualdad estricta: ' + (numero !=='7'));
+
+    //Operadores Lógicos
+    var nombre1= 'Juan';
+    var nombre2='Pepita';
+
+
+    console.log('condicion Y: ' + ((nombre1=='Juan')&&(nombre2=='Pepita')) ); // sentencia verdad && verdad = verdad
+                                                //sentencia false && verdad= falso (y viceversa)
+    console.log('condicion  Ó: ' + ((nombre1=='Juan')||(nombre2=='Pepitaaaaaa')) ); // sentencia verdad || falso = verdad
+
+
+    console.log('Negacion 2º sentencia: ' + !(nombre2 =='Pepa'));
+    console.log('Negacion 1º sentencia: ' + !(nombre1 =='Juan'));
+
+
+
+    </script>
+</body>
+</html>

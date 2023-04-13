@@ -1,0 +1,11 @@
+#resultado{
+    font-weight: bold;
+    color: white;
+    letter-spacing: 4px;
+  
+    margin: 16px auto;
+    border-radius: 2px;
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-pizarra-negra_53876-110809.jpg);
+    background-size: cover;
+    border: 3px solid burlywood;
+}

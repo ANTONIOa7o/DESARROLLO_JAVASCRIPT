@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes 2</title>
+    <!--Inyecto la libreria de sweetAlert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--Inyectar tambien nuestro archivo css nativo-propio-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <script>
+    //Dentro de la etiqueta contenedora <script> admite todo tipo de lenguaje script
+        /*
+        document.write(): mensaje de texto incrustado en el html, una respuesta en js
+        que asociado a html, vendria a ser un h1,h2,.. parrafo
+        sintaxis:
+        primera parte apunta al lugar de su ejecucion[document].
+        el punto será enlace a un método o sintaxis de javascript [write()]
+    
+        */
+       document.write('<h2>Hola desde esta pagina Js</h2>');
+
+       //Conclusiones: Podemos desde javascript trasladar elemento de html
+
+       /*
+       console.log(): mensajes o muestra, recogida,visualizacion de datos,
+       texto, variables... en el inspector dentro de la consola
+       Sintaxis: 
+       primera parte apunta al lugar de su ejecucion[console].
+        el punto será enlace a un método o sintaxis de javascript [log()]
+       */
+      console.log('Hola'+3);
+      console.log(3+5);
+      //Conclusion: Buscamos como localidor, control y analisis de la variables
+      //Y percibimos nuestro primer concatenador + y el algortimo sumatorio
+      //exclusivo para numeros
+
+      alert('Aqui estoy!!!');
+      /*
+      Configuraciones de los alert();
+      FrameWork que nos ayuda a instalar digamos un conjunto de recuros
+      que nos ayudan a mejorar la estetica e interacion del alert
+      https://sweetalert.js.org/
+      1. Inyectar dentro de las configuraciones de pagina, el script que nos ha facilitados
+          <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></scrip>
+    
+    */
+          
+     
+      swal({ title: "Bienvenidos!", text: "Presiona para Salir",  icon: "success",  button: "Gracias, por venir",});
+    </script>
+</body>
+
+</html>
